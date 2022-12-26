@@ -101,6 +101,9 @@ a:active{
     padding: 10px;
     box-sizing: border-box;
 }
+.clear-fix{
+    clear: both;
+}
 .main-block{
     float: left;
     width:70%;
@@ -112,4 +115,41 @@ a:active{
     color: white;
     padding: 15px;
     box-sizing: border-box;
+}
+.position-box{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    background-image: url('burger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.position-box h1{ 
+    position: absolute;
+    top: 40px;
+    left: 120px;
+}
+.position-box h2{
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+.fix-po{
+    position: fixed;
+    top: 400px;
+}
+.my-list li:first-child{
+    background: red;
+}
+.my-list li:last-child{
+    background: green;
+}
+.my-list li:nth-child(3){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+    background: gray;
 }
