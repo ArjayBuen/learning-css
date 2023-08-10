@@ -13,7 +13,7 @@ body{
 }
 .container{
     width: 80%;
-    margin: auto;
+    margin: auto;/*making the content center*/
 }
 .box-1{
     background-color: gray;
@@ -67,7 +67,7 @@ a:hover{
 }
 a:active{
     color:green
-}
+}/*if click*/
 /* a:visited{
     color:blue;
 } */
@@ -78,10 +78,10 @@ a:active{
     padding-bottom: 15px;
 }
 .my-form label{
-    display: block;
+    display: block;/*input is inline thats why block is used*/
 }
 .my-form input[type="text"],.my-form textarea,.my-form input[type="email"]{
-    padding:9px;
+    padding:9px;/*add space in the input*/
     width: 100%;
 }
 .btn{
@@ -90,19 +90,20 @@ a:active{
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 .btn:hover{
-    background-color: lightgray;
+    background-color: rgb(62, 10, 135);
 }
 .block{
     float: left;
-    width: 33.3%;
+    width: 33.3%;/*since there is 3 div inside if multiply it is =100*/
     border: 1px solid black;
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box;/*if not used the last box will go down*/
 }
 .clear-fix{
-    clear: both;
+    clear: both;/*used if there are float use above*/
 }
 .main-block{
     float: left;
@@ -125,17 +126,17 @@ a:active{
     background-image: url('burger.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: rgb(13, 10, 10);
 }
 .position-box h1{ 
-    position: absolute;
+    position: absolute;/*Parent must be relative*/
     top: 40px;
     left: 120px;
 }
 .position-box h2{
     position: absolute;
-    bottom: 40px;
-    right: 200px;
+    bottom: 20px;
+    right: 350px;
 }
 .fix-po{
     position: fixed;

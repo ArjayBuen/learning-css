@@ -9,7 +9,7 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    overflow: hidden;/*in order to dont have scroll if elements over the limit :) */
 }
 #main-header{
     background-color: teal;
@@ -61,11 +61,11 @@ body{
     padding: 10px;
 }
 #main-footer{
-    background-color: darkgrey;
+    background-color: rgb(16, 15, 15);
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 200px;
 }
 @media(max-width:800px){
     #main,#sidebar{
